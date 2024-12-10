@@ -1,0 +1,41 @@
+@model ProductDtoForInsertion
+
+<div class="text-center">
+    <div class="display-6">Ürün Ekle</div>
+    <form method="post" asp-action="Create" enctype="multipart/form-data">
+        <div class="text-danger" asp-validation-summary="All"></div>
+        <div class="form-group my-3">
+            <label asp-for="CategoryId">Kategori Id</label>
+            <select class="form-control" asp-for="CategoryId" asp-items="@ViewBag.Categories">
+            </select>
+        </div>
+
+        <div class="form-group my-3">
+            <label asp-for="ProductName">Ürün İsmi</label>
+            <input class="form-control" asp-for="ProductName" />
+        </div>
+
+        <div class="form-group my-3">
+            <label asp-for="Summary">Açıklama</label>
+            <input class="form-control" asp-for="Summary" />
+        </div>
+
+        <div class="form-group my-3">
+            <label asp-for="ImageUrl">Fotoğraf Ekle</label>
+            <input class="form-control" name="file" type="file" />
+        </div>
+
+        <div class="form-group my-3">
+            <label asp-for="Price">Tutar</label>
+            <input class="form-control" asp-for="Price" />
+        </div>
+
+        <div class="form-group my-3">
+            <div class="btn-group">
+                <button type="submit" class="btn btn-primary"><i class="fa fa-save"></i> Kaydet</button>
+                <a asp-action="Index" class="btn btn-outline-primary"><i class="fa fa-list"></i> Ürünlerimiz</a>
+            </div>
+
+        </div>
+    </form>
+</div>

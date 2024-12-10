@@ -1,0 +1,52 @@
+@model ProductDtoForUpdate
+
+<div class="text-center">
+    <div class="display-6">Güncelle</div>
+    <form  method="post" asp-action="Update" enctype="multipart/form-data">
+        <div class="text-danger"  asp-validation-summary="All"></div>
+
+        <input type="hidden" asp-for="ProductId" />
+            <div class="form-group my-3">
+            <label asp-for="CategoryId">Kategori Id</label>
+            <select class="form-control" asp-for="CategoryId" asp-items="@ViewBag.Categories">
+            </select>
+        </div>
+        <div class="form-group my-3">
+            <label asp-for="ProductName">Ürün Adı</label>
+            <input class="form-control" asp-for="ProductName" />
+        </div>
+       
+        <div class="form-group my-3">
+            <label asp-for="Summary">Açıklama</label>
+            <input class="form-control" asp-for="Summary" />
+        </div>
+
+         <div class="form-group my-3">
+            <label asp-for="Price">Tutar</label>
+            <input class="form-control" asp-for="Price" />
+        </div>
+
+        <div class="form-check form-switch">
+  <label class="form-check-label" for="flexSwitchCheckDefault">Öne Çıkarılsın mı?</label>
+    <input asp-for="Showcase" class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+
+</div>
+
+        <div class="form-group my-3">
+            <img src="@Model.ImageUrl"  width="150" height="150" class="rounded shadow" alt=""/>
+        </div>
+
+         <div class="form-group my-3">
+            <label asp-for="ImageUrl">Fotoğraf Ekle</label>
+            <input class="form-control" name="file" type="file" />
+        </div>
+
+        <div class="form-group my-3">
+            <div class="btn-group">
+                <button type="submit" class="btn btn-primary"><i class="fa fa-save"></i> Güncelle</button>
+                <a asp-action="Index" class="btn btn-outline-primary"><i class="fa fa-list"></i> Ürünlerimiz</a>
+            </div>
+
+        </div>
+    </form>
+</div>

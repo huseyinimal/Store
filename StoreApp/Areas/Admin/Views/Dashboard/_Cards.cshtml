@@ -1,0 +1,56 @@
+<div class="row">
+    <div class="col-md-3">
+        <div class="card bg-primary text-white" style="width: 18rem;">
+            <div class="card-body text-center">
+                <h6 class="card-subtitle mb-2">Adet</h6>
+                <h5 class="card-title">Ürünlerimiz</h5>
+                <h3 class="text-center display-3">
+                    @await Component.InvokeAsync("ProductSummary")
+                </h3>
+                <a asp-controller="Product" asp-action="Index" class="card-link text-white">Ürünlerimiz</a>
+                <a asp-controller="Product" asp-action="Create" class="card-link text-white">Ürün Ekle</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-3">
+        <div class="card bg-danger text-white" style="width: 18rem;">
+            <div class="card-body text-center">
+                <h6 class="card-subtitle mb-2">Adet</h6>
+                <h5 class="card-title">Kategorilerimiz</h5>
+                <h3 class="text-center display-3">
+                    @await Component.InvokeAsync("CategorySummary")
+                </h3>
+                <a asp-controller="Category" asp-action="Index" class="card-link text-white">Kategorilerimiz</a>
+                <a asp-controller="Category" asp-action="Create" class="card-link text-white">Kategori Ekle</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-3">
+        <div class="card bg-info text-white" style="width: 18rem;">
+            <div class="card-body text-center">
+                <h6 class="card-subtitle mb-2">Adet</h6>
+                <h5 class="card-title">Kullanıcılarımız</h5>
+                <h3 class="text-center display-3">
+                    @await Component.InvokeAsync("UserSummary")
+                </h3>
+                <a asp-controller="User" asp-action="Index" class="card-link text-white">Kullanıcılarımız</a>
+                <a asp-controller="User" asp-action="Create" class="card-link text-white">Kullanıcı Ekle</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-3">
+        <div class="card bg-warning text-white" style="width: 18rem;">
+            <div class="card-body text-center">
+                <h6 class="card-subtitle mb-2">Adet</h6>
+                <h5 class="card-title">Tamamlanmamış Sipariş</h5>
+                <h3 class="text-center display-3">
+                    @await Component.InvokeAsync("OrderInProgress")
+                </h3>
+                <a asp-controller="Order" asp-action="Index" class="card-link text-white">Siparişlerimiz</a>
+            </div>
+        </div>
+    </div>
+</div>

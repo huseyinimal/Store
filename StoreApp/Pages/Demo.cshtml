@@ -1,0 +1,17 @@
+@page
+@model DemoModel
+@{
+
+}
+
+<div class="my-5 text-center">
+    <div class="display-6">Merhaba @Model?.FullName</div>
+    
+    <form method="post" asp-page="/Demo">
+<div class="form-group">
+    <input class="form-control" name="name" placeholder="Enter your name" />
+    <input type="submit" class="btn btn-primary my-2" />
+</div>
+</form>
+
+</div>

@@ -1,0 +1,50 @@
+@model IEnumerable<IdentityUser>
+
+
+<div class="text-center">
+<div class="display-6">Kullanıcılar</div>
+</div>
+
+<table>
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Kullanıcı Adı</th>
+            <th>Yetkilendirme</th>
+            <th>İşlemler</th> 
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(IdentityUser user in Model){
+            <tr>
+                <td>@user.Id</td>
+                <td>@user.UserName</td>
+                <td user-name="@user.UserName" user-role=""></td>
+                <td>
+                    <div class="btn-group">
+                        <a
+                        data-toggle="tooltip" data-placement="top" title="Düzenle"
+                          class="btn btn-sm btn-warning rounded-0"  asp-action="Update" asp-route-id="@user.UserName"><i class="fa fa-edit"></i></a>
+                        <a 
+                        data-toggle="tooltip" data-placement="top" title="Şifre Güncelle"
+                         class="btn btn-sm btn-info rounded-0" asp-action="ResetPassword" asp-route-id="@user.UserName"><i class="fa-solid fa-arrows-rotate"></i></a>
+                        <form method="post" asp-action="DeleteOneUser">
+                            <input type="hidden" name="UserName" value="@user.UserName" />
+                            <button type="submit" class="btn btn-sm btn-danger rounded-0" data-toggle="tooltip" data-placement="top" title="Sil">
+                                <i class="fa fa-solid fa-trash"></i>
+                            </button>
+                        </form>
+                    </div>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+@section Scripts{
+    <script type="text/javascript">
+    $(document).ready(()=>{
+        $('[data-toggle="tooltip"]').tooltip()
+    });
+    </script>
+}

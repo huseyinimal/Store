@@ -1,0 +1,47 @@
+@model Order
+@{
+    var total = @Model.Lines.Sum(c=> c.Product.Price * c.Quantity);
+}
+
+<div class="row shadow my-3">
+    <div class="col-md-3 border-dark border-1 p-3 bg-light shadow">
+        <h5 class="display-5 text-center" >
+            <i class="fa fa-address-book text-danger"></i>
+            <br>
+            @Model?.Name
+        </h5>
+        <p>@Model?.Line1</p> 
+        <p>@Model?.Line2</p> 
+        <p>@Model?.Line3</p>
+        <p>@Model?.City</p>
+        <p class="rounded-2 p-3">
+            <span class="bg-warning p-2">Sipariş Durumu</span>
+            <span class="bg-info p-2">@(Model.Shipped ? "Tamamlandı":"Devam Ediyor")</span>
+        </p>
+    </div>
+    <div class="col-md-9">
+        <h6 class="display-6 mt-3 text-center">
+            Cart
+        </h6>
+        <ul class="list-group">
+            @foreach(var cartItem in Model?.Lines){
+                <li class="list-group-item d-flex justify-content-between brand">
+                    @cartItem.Product.ProductName
+                    <b>@cartItem.Quantity * @cartItem.Product.Price.ToString("C0")
+                        = @((cartItem.Quantity * cartItem.Product.Price).ToString("C0"))
+                    </b>
+                </li>
+            }
+            <li class="list-group-item d-flex justify-content-between text-danger">
+                    <b>Tutar</b>
+                    <b>@total.ToString("C0")</b>
+            </li>
+        </ul>
+        <div class="text-center mt-2 p-2">
+            <form method="post" asp-action="Complete">
+                <input name="id" value="@Model.OrderId" type="hidden" />
+                <button type="submit" class="btn btn-primary" disabled="@Model.Shipped">Siparişi Tamamla</button>
+            </form>
+        </div>
+    </div>
+</div>
