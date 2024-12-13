@@ -55,12 +55,6 @@ C:\Users\huseyin.imal\MVC\Store\StoreApp\bin\Debug\net6.0\Repositories.dll
 C:\Users\huseyin.imal\MVC\Store\StoreApp\bin\Debug\net6.0\Repositories.pdb
 C:\Users\huseyin.imal\MVC\Store\StoreApp\bin\Debug\net6.0\Services.dll
 C:\Users\huseyin.imal\MVC\Store\StoreApp\bin\Debug\net6.0\Services.pdb
-C:\Users\huseyin.imal\MVC\Store\StoreApp\obj\Debug\net6.0\staticwebassets\msbuild.StoreApp.Microsoft.AspNetCore.StaticWebAssets.props
-C:\Users\huseyin.imal\MVC\Store\StoreApp\obj\Debug\net6.0\staticwebassets\msbuild.build.StoreApp.props
-C:\Users\huseyin.imal\MVC\Store\StoreApp\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.StoreApp.props
-C:\Users\huseyin.imal\MVC\Store\StoreApp\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.StoreApp.props
-C:\Users\huseyin.imal\MVC\Store\StoreApp\obj\Debug\net6.0\staticwebassets.pack.json
-C:\Users\huseyin.imal\MVC\Store\StoreApp\obj\Debug\net6.0\StoreApp.csproj.Up2Date
 C:\Users\huseyin.imal\MVC\Store\StoreApp\bin\Debug\net6.0\AutoMapper.dll
 C:\Users\huseyin.imal\MVC\Store\StoreApp\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 C:\Users\huseyin.imal\MVC\Store\StoreApp\bin\Debug\net6.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
@@ -95,7 +89,6 @@ C:\Users\huseyin.imal\MVC\Store\StoreApp\bin\Debug\net6.0\runtimes\win\lib\netco
 C:\Users\huseyin.imal\MVC\Store\StoreApp\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
 C:\Users\huseyin.imal\MVC\Store\StoreApp\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\huseyin.imal\MVC\Store\StoreApp\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
-C:\Users\huseyin.imal\MVC\Store\StoreApp\obj\Debug\net6.0\StoreApp.sourcelink.json
 C:\Users\huseyin.imal\MVC\BtkAkademi\Store\StoreApp\bin\Debug\net6.0\appsettings.Development.json
 C:\Users\huseyin.imal\MVC\BtkAkademi\Store\StoreApp\bin\Debug\net6.0\appsettings.json
 C:\Users\huseyin.imal\MVC\BtkAkademi\Store\StoreApp\bin\Debug\net6.0\libman.json
@@ -194,3 +187,10 @@ C:\Users\huseyin.imal\MVC\BtkAkademi\Store\StoreApp\obj\Debug\net6.0\refint\Stor
 C:\Users\huseyin.imal\MVC\BtkAkademi\Store\StoreApp\obj\Debug\net6.0\StoreApp.pdb
 C:\Users\huseyin.imal\MVC\BtkAkademi\Store\StoreApp\obj\Debug\net6.0\StoreApp.genruntimeconfig.cache
 C:\Users\huseyin.imal\MVC\BtkAkademi\Store\StoreApp\obj\Debug\net6.0\ref\StoreApp.dll
+C:\Users\huseyin.imal\MVC\Store\StoreApp\obj\Debug\net6.0\StoreApp.sourcelink.json
+C:\Users\huseyin.imal\MVC\Store\StoreApp\obj\Debug\net6.0\staticwebassets\msbuild.StoreApp.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\huseyin.imal\MVC\Store\StoreApp\obj\Debug\net6.0\staticwebassets\msbuild.build.StoreApp.props
+C:\Users\huseyin.imal\MVC\Store\StoreApp\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.StoreApp.props
+C:\Users\huseyin.imal\MVC\Store\StoreApp\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.StoreApp.props
+C:\Users\huseyin.imal\MVC\Store\StoreApp\obj\Debug\net6.0\staticwebassets.pack.json
+C:\Users\huseyin.imal\MVC\Store\StoreApp\obj\Debug\net6.0\StoreApp.csproj.Up2Date

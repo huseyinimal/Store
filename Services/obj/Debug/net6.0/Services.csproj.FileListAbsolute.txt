@@ -14,8 +14,6 @@ C:\Users\huseyin.imal\MVC\Store\Services\obj\Debug\net6.0\Services.dll
 C:\Users\huseyin.imal\MVC\Store\Services\obj\Debug\net6.0\refint\Services.dll
 C:\Users\huseyin.imal\MVC\Store\Services\obj\Debug\net6.0\Services.pdb
 C:\Users\huseyin.imal\MVC\Store\Services\obj\Debug\net6.0\ref\Services.dll
-C:\Users\huseyin.imal\MVC\Store\Services\obj\Debug\net6.0\Services.csproj.Up2Date
-C:\Users\huseyin.imal\MVC\Store\Services\obj\Debug\net6.0\Services.sourcelink.json
 C:\Users\huseyin.imal\MVC\BtkAkademi\Store\Services\bin\Debug\net6.0\Services.deps.json
 C:\Users\huseyin.imal\MVC\BtkAkademi\Store\Services\bin\Debug\net6.0\Services.dll
 C:\Users\huseyin.imal\MVC\BtkAkademi\Store\Services\bin\Debug\net6.0\Services.pdb
@@ -34,3 +32,5 @@ C:\Users\huseyin.imal\MVC\BtkAkademi\Store\Services\obj\Debug\net6.0\Services.dl
 C:\Users\huseyin.imal\MVC\BtkAkademi\Store\Services\obj\Debug\net6.0\refint\Services.dll
 C:\Users\huseyin.imal\MVC\BtkAkademi\Store\Services\obj\Debug\net6.0\Services.pdb
 C:\Users\huseyin.imal\MVC\BtkAkademi\Store\Services\obj\Debug\net6.0\ref\Services.dll
+C:\Users\huseyin.imal\MVC\Store\Services\obj\Debug\net6.0\Services.sourcelink.json
+C:\Users\huseyin.imal\MVC\Store\Services\obj\Debug\net6.0\Services.csproj.Up2Date
